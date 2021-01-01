@@ -756,6 +756,10 @@ h4 {
   color: #596065;
 }
 
+.nav-link.w--open {
+  color: #596065;
+}
+
 .section-roadmap {
   position: relative;
   display: -webkit-box;
@@ -1103,10 +1107,11 @@ h4 {
   position: relative;
   padding-top: 100px;
   padding-bottom: 100px;
-  background-image: url('../images/bg-website2.jpg');
-  background-position: 50% 100%;
-  background-size: auto;
-  background-attachment: fixed;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.45)), to(rgba(255, 255, 255, 0.45))), url('../images/image-tech.png');
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.45)), url('../images/image-tech.png');
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-attachment: scroll, fixed;
 }
 
 .contact-scroll {
@@ -1559,10 +1564,11 @@ h4 {
 .section-copyright {
   padding-top: 20px;
   padding-bottom: 20px;
-  background-image: url('../images/bg-website2.jpg');
-  background-position: 50% 100%;
-  background-size: auto;
-  background-attachment: fixed;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.45)), to(rgba(255, 255, 255, 0.45))), url('../images/image-tech.png');
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.45)), url('../images/image-tech.png');
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-attachment: scroll, fixed;
 }
 
 .text-smallest {
@@ -1614,8 +1620,8 @@ h4 {
   display: grid;
   height: auto;
   grid-auto-columns: 1fr;
-  grid-column-gap: 100px;
-  grid-row-gap: 100px;
+  grid-column-gap: 175px;
+  grid-row-gap: 175px;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   -ms-grid-rows: auto;
@@ -1637,6 +1643,9 @@ h4 {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
 }
 
 .logo-image {
@@ -1684,6 +1693,14 @@ h4 {
 
 .button-twitter:active {
   background-color: #eaf6ff;
+}
+
+.dropdown-list {
+  background-color: transparent;
+}
+
+.dropdown-list.w--open {
+  overflow: hidden;
 }
 
 @media screen and (max-width: 991px) {
