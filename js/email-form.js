@@ -31,24 +31,13 @@ function subscribe($emailInput, $messageHolder) {
     });
 }
 
-function attachEmailSignup($wrapper) {
-    const $form = $wrapper.find('form');
-    const $email = $wrapper.find('input[name=email]');
-    const $message = $wrapper.find('.js-email-message');
-    console.log($form, $email, $message, "?????")
-    $form.on('submit', (evt) => {
-        evt.preventDefault();
-        subscribe($email, $message);
-    });
-
-}
-
 function initEmailForm() {
-    $('.js-email-signup').each((index, el) => {
-        attachEmailSignup($(el));
-    });
-    $("#send-button").on("click", function () {
-        $("#send-form").submit();
+    $("#send-button").on("click", function (evt) {
+        evt.preventDefault();
+        let $wrapper = $('.js-email-signup').first();
+        const $email = $wrapper.find('input[name=email]');
+        const $message = $wrapper.find('.js-email-message');
+        subscribe($email, $message);
     });
 }
 
