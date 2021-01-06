@@ -1620,8 +1620,8 @@ h4 {
   display: grid;
   height: auto;
   grid-auto-columns: 1fr;
-  grid-column-gap: 175px;
-  grid-row-gap: 175px;
+  grid-column-gap: 160px;
+  grid-row-gap: 160px;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   -ms-grid-rows: auto;
@@ -1633,7 +1633,7 @@ h4 {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 2100px;
+  width: 3200px;
   height: auto;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
