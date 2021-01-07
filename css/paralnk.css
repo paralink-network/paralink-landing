@@ -1620,12 +1620,15 @@ h4 {
   display: grid;
   height: auto;
   grid-auto-columns: 1fr;
-  grid-column-gap: 160px;
-  grid-row-gap: 160px;
+  grid-column-gap: 130px;
+  grid-row-gap: 130px;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   -ms-grid-rows: auto;
   grid-template-rows: auto;
+  -webkit-transform: translate(-2500px, 0px);
+  -ms-transform: translate(-2500px, 0px);
+  transform: translate(-2500px, 0px);
 }
 
 .logo-row {
@@ -1643,9 +1646,6 @@ h4 {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-transform: translate(0px, 0px);
-  -ms-transform: translate(0px, 0px);
-  transform: translate(0px, 0px);
 }
 
 .logo-image {
