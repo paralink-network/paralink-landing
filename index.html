@@ -381,14 +381,14 @@
           <div class="process-col-left">
             <div class="process-block">
               <div class="process-triangle flipped"></div>
-              <h4 class="heading-timeline">Relayer Quorums</h4>
+              <h4 class="heading-timeline">Relayer Quorum</h4>
               <p class="paragraph-small">Launch a parachain on Rococo testnet</p>
               <div class="timeline-line"></div>
               <p class="paragraph-small">PARA staking and rewards</p>
             </div>
             <div class="process-number-wrapper flipped">
               <div class="number-timeline">2021 Q3</div>
-              <div class="process-number-title">Relayer<br>Quorums</div>
+              <div class="process-number-title">Relayer<br>Quorum</div>
               <div class="process-dot"></div>
             </div>
           </div>
@@ -439,7 +439,7 @@
               <h4 class="heading-timeline">Polkadot</h4>
               <p class="paragraph-small">Polkadot &lt;&gt; Ethereum interop</p>
               <div class="timeline-line"></div>
-              <p class="paragraph-small">Deploy paralink as parachain on Polkadot</p>
+              <p class="paragraph-small">Deploy Paralink as parachain on Polkadot</p>
             </div>
           </div>
         </div>
@@ -468,7 +468,12 @@
               <div class="faq-question-label">Who can become a data provider in Paralink?</div><img src="images/arrow-circle.png" loading="lazy" width="20" height="20" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0)" alt="" class="faq-arrow">
             </div>
             <div class="faq-answer">
-              <p style="opacity:0" class="paragraph-answer">Anyone can run the Paralink Node and serve as in ingress to DeFi smart contracts. Paralink token holders can also participate in relayer quorums. Paralink relayer quorums are self-organizing, on-chain consensus networks for data streams that require higher degree of security.</p>
+              <p style="opacity:0" class="paragraph-answer">Anyone can run the Paralink Node and
+              serve as an oracle to DeFi smart contracts. Paralink oracle quorums are
+              self-organizing, on-chain consensus networks for data streams that require higher
+              degree of security. Relayer quorum is a set of nominated validators that perform the final
+              oracle job validation and relay the results over bridges/xcmp. The relayer quorum is
+              governed by PARA token holders.</p>
             </div>
           </div>
           <div class="faq-item-wrapper">
@@ -476,7 +481,12 @@
               <div class="faq-question-label">Is there a mechanism for ensuring high quality data?</div><img src="images/arrow-circle.png" loading="lazy" width="20" height="20" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0)" alt="" class="faq-arrow">
             </div>
             <div class="faq-answer">
-              <p style="opacity:0" class="paragraph-answer">All relayers feeds are plugged into a reputation system. An under-performing relayer&#x27;s quality score is penalized with each missed request or large deviation from the reference. Poor score leads to lower ranking, which can make a relayer ineligible for rewards.</p>
+              <p style="opacity:0" class="paragraph-answer">The revenue of trusted oracles as well
+              as on-chain oracle quorums is highly dependent on the reliability and accuracy of the
+              data. Paralink network is a permisionless system, therefore free market forces
+              will always ensure that the revenue is re-allocated from underperforming oracles to
+              the competent ones. The on-chain aggregation and validation adds an additional
+              layer of security and data integrity.</p>
             </div>
           </div>
         </div>
@@ -504,7 +514,13 @@
               <div class="faq-question-label">What is the purpose of Paralink Token?</div><img src="images/arrow-circle.png" loading="lazy" width="20" height="20" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0)" alt="" class="faq-arrow">
             </div>
             <div class="faq-answer">
-              <p style="opacity:0" class="paragraph-answer">Paralink Token (PARA) is a incentive token used in on-chain coordination and governance. Each data repository that needs on-chain consensus has its own quorum of relayers. PARA holders can create relayer quorums by staking the token. The repository is then governed by repository token holders, which are also responsible for electing relayer quorum members. Repository owners and quorum relayers earn PARA tokens for providing their service. An under-performing relayer&#x27;s quality score is penalized with each missed request or large deviation from the reference. Poor score leads to lower ranking, which makes a relayer ineligible for rewards. This structure promotes alignment of incentives throughout the hierarchy of participants.</p>
+              <p style="opacity:0" class="paragraph-answer">Paralink Token (PARA) is an incentive
+              and governance token on the Paralink blockchain. PARA holders will be able to stake
+              their tokens to earn the governance rights. Amongst other things, their primary
+              responsibility will be management of the relayer quorum trough continous voting. In
+              exchange for staking their tokens and performing regular governance functions,
+              they will earn APY on their staked amount.
+              </p>
             </div>
           </div>
           <div class="faq-item-wrapper">
