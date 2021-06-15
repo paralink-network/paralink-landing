@@ -2338,3 +2338,13 @@ h4 {
     align-self: center;
   }
 }
+
+.c-form-message {
+  padding: 5px;
+}
+.c-form-message--success {
+  color: lightgreen;
+}
+.c-form-message--error {
+  color: darkred;
+}
