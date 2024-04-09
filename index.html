@@ -217,10 +217,10 @@
     <div data-w-id="ecf1d5ee-c2bf-5fa0-e094-68661ecde5d7" class="container-polkadot">
       <div class="subheading-div">
         <div class="subheading-line"></div>
-        <div class="subheading">On-Chain Consensus</div>
+        <div class="subheading">Oracle Feeds</div>
       </div>
       <h2 class="heading-section">Powered by <span class="polka-black">Polkadot</span><span class="polka-pink">.</span></h2>
-      <p class="paragraph-main">Some data sources require more security than others. One such example are the real-time price feeds to be used in decentralized derivative and money markets, where any corruption in the price feeds can result in large financial losses. For this use case, a reputable quorum of relayers with on-chain coordination, validation and interpolation mechanisms is required. Performing such consensus algorithm at high frequency is prohibitively expensive on Ethereum due to low throughput and high gas costs. For this reason, Paralink on-chain consensus algorithm is being built using Polkadot and its Substrate stack.</p>
+      <p class="paragraph-main">Paralink Network introduces the Oracle Feeds feature, which allows other chains on the same relay chain to continuously receive a piece of external data. The Paralink Network blockchain acts as a single access point for various data feeds provided by the external Paralink Node oracle service. The data feeds are defined by the Paralink Query Language definition file and stored in the IPFS file system. The Oracle Feeds utilizes the XCM message scheme to communicate between chains. Other chains can register to receive the feeds data updates periodically. The data feeds are chain-wide and can be used by users in, for example, the ink! Contracts. The feed provider must maintain a sufficient staking balance to be able to submit the feed updates. Due to the sheer volume of updates, the Oracle Feeds feature is limited to the approved chains. Paralink is built using Polkadot and its Substrate stack.</p>
     </div>
     <div style="opacity:0" class="extra"></div>
   </div>
